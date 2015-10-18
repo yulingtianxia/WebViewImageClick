@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F94999F523F7D848430BC74 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4BF434DF072C8F49234A7F /* libPods.a */; };
 		A4F91FF71BD35CF900508293 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F91FF61BD35CF900508293 /* main.m */; };
 		A4F91FFA1BD35CF900508293 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F91FF91BD35CF900508293 /* AppDelegate.m */; };
 		A4F91FFD1BD35CF900508293 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F91FFC1BD35CF900508293 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CFEB2455AB38956EBBDD639 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2E05FA085B3F7642F470BDB9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A4F91FF21BD35CF900508293 /* WebViewImageClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewImageClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F91FF61BD35CF900508293 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4F91FF81BD35CF900508293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		A4F920161BD35CF900508293 /* WebViewImageClickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewImageClickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F9201A1BD35CF900508293 /* WebViewImageClickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewImageClickUITests.m; sourceTree = "<group>"; };
 		A4F9201C1BD35CF900508293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF4BF434DF072C8F49234A7F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F94999F523F7D848430BC74 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48D503E2648D271F22852730 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CFEB2455AB38956EBBDD639 /* Pods.debug.xcconfig */,
+				2E05FA085B3F7642F470BDB9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		946EF0B21C7B1CB3F2109575 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF4BF434DF072C8F49234A7F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4F91FE91BD35CF900508293 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				A4F9200E1BD35CF900508293 /* WebViewImageClickTests */,
 				A4F920191BD35CF900508293 /* WebViewImageClickUITests */,
 				A4F91FF31BD35CF900508293 /* Products */,
+				48D503E2648D271F22852730 /* Pods */,
+				946EF0B21C7B1CB3F2109575 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4F9201F1BD35CF900508293 /* Build configuration list for PBXNativeTarget "WebViewImageClick" */;
 			buildPhases = (
+				940BAB1A66F4EA6A8A4A67A6 /* Check Pods Manifest.lock */,
 				A4F91FEE1BD35CF900508293 /* Sources */,
 				A4F91FEF1BD35CF900508293 /* Frameworks */,
 				A4F91FF01BD35CF900508293 /* Resources */,
+				9F6E27A5413C0B5C17EF98D0 /* Embed Pods Frameworks */,
+				5FCC90586CAB575ECB0D02AE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FCC90586CAB575ECB0D02AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		940BAB1A66F4EA6A8A4A67A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6E27A5413C0B5C17EF98D0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4F91FEE1BD35CF900508293 /* Sources */ = {
@@ -409,6 +484,7 @@
 		};
 		A4F920201BD35CF900508293 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFEB2455AB38956EBBDD639 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebViewImageClick/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		A4F920211BD35CF900508293 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E05FA085B3F7642F470BDB9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WebViewImageClick/Info.plist;
@@ -496,6 +573,7 @@
 				A4F920211BD35CF900508293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4F920221BD35CF900508293 /* Build configuration list for PBXNativeTarget "WebViewImageClickTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				A4F920241BD35CF900508293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4F920251BD35CF900508293 /* Build configuration list for PBXNativeTarget "WebViewImageClickUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				A4F920271BD35CF900508293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

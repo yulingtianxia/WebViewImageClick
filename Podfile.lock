@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
+  - IDMPhotoBrowser (1.7):
+    - AFNetworking
+    - DACircularProgress
+    - pop
+  - pop (1.0.8)
+  - skpsmtpmessage (0.0.1)
+
+DEPENDENCIES:
+  - IDMPhotoBrowser
+  - skpsmtpmessage
+
+SPEC CHECKSUMS:
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  IDMPhotoBrowser: 1155caa03f8705b7943c074c26b55aadd43d71da
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  skpsmtpmessage: f6e913380c784dd8d4a9f83c8790a302445a5e05
+
+COCOAPODS: 0.39.0
