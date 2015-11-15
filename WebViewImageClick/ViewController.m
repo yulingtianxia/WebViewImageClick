@@ -47,12 +47,12 @@
     }\
     function getImageRect(i){\
         var imgs = document.getElementsByTagName(\"img\");\
-            var rect;\
-            rect = imgs[i].getBoundingClientRect().left+\"::\";\
-            rect = rect+imgs[i].getBoundingClientRect().top+\"::\";\
-            rect = rect+imgs[i].width+\"::\";\
-            rect = rect+imgs[i].height;\
-            return rect;\
+        var rect;\
+        rect = imgs[i].getBoundingClientRect().left+\"::\";\
+        rect = rect+imgs[i].getBoundingClientRect().top+\"::\";\
+        rect = rect+imgs[i].width+\"::\";\
+        rect = rect+imgs[i].height;\
+        return rect;\
     }\
     function getAllImageUrl(){\
         var imgs = document.getElementsByTagName(\"img\");\
